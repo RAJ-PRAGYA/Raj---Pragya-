@@ -2,28 +2,44 @@
 <html>
 <head>
 <style>
-  body { background-color: #ffe5e6; text-align: center; font-family: 'Arial', sans-serif; padding: 20px; }
-  h1 { color: #ff4d4d; }
-  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
-  .gallery img { width: 100%; height: auto; border-radius: 15px; border: 5px solid white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    body { background-color: #ffe5e6; text-align: center; font-family: 'Arial', sans-serif; padding: 20px; }
+    h1 { color: #ff4d4d; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+    .gallery img { 
+        width: 100%; 
+        height: auto; 
+        border-radius: 15px; 
+        border: 5px solid white; 
+        transition: transform 0.3s ease; 
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+        border: 5px solid #ffb6c1;
+    }
 </style>
 </head>
 <body>
 
-  <h1>Welcome to Raj and Pragya's World!</h1>
-  <p>This is our special space created with love. ❤️</p>
-<!-- पहला वीडियो -->
+<h1>Welcome to Raj and Pragya's World!</h1>
+<p>This is our special space created with love. ❤️</p>
+
+<!-- सरप्राइज बटन -->
+<button onclick="alert('राज और प्रज्ञा की दोस्ती सबसे प्यारी है! 💖 हमेशा साथ रहेंगे!')" 
+        style="padding: 10px 20px; font-size: 16px; border-radius: 20px; border: none; background-color: #ff85a2; color: white; cursor: pointer; margin-bottom: 20px;">
+    मेरे लिए एक सरप्राइज! 🎁
+</button>
+
+<!-- वीडियो सेक्शन -->
 <video width="100%" autoplay loop playsinline controls style="border-radius: 15px; margin-bottom: 20px;">
-  <source src="myvideo.mp4" type="video/mp4">
+    <source src="myvideo.mp4" type="video/mp4">
 </video>
 
-<!-- दूसरा वीडियो -->
 <video width="100%" autoplay loop playsinline controls style="border-radius: 15px; margin-bottom: 20px;">
-  <source src="Video.mp4" type="video/mp4">
+    <source src="Video.mp4" type="video/mp4">
 </video>
-  
-  
-  <div class="gallery">
+
+<!-- गैलरी सेक्शन -->
+<div class="gallery">
     <img src="Pic1.jpg" alt="Anime">
     <img src="Pic2.jpg" alt="Anime">
     <img src="Pic3.jpg" alt="Anime">
@@ -33,8 +49,8 @@
     <img src="Pic7.jpg" alt="Anime">
     <img src="Pic8.jpg" alt="Anime">
     <img src="Pic9.jpg" alt="Anime">
-    <img src="pic10.jpg" alt="Anime">
-  </div>
+    <img src="Pic10.jpg" alt="Anime">
+</div>
 
 </body>
 </html>
